@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>RT Proxy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container">
+    <div class="page-header">
+      <h1>RT Proxy</h1>
+    </div>
+    <div class="row">
+		<div class="col-md-3">
+			<div class="list-group">
+				<a id="twitter" class="list-group-item" href="#">Twitter &raquo;</a>
+				<a id="facebook" class="list-group-item" href="#">Facebook &raquo;</a>
+				<a id="linkedin" class="list-group-item" href="#">LinkedIn &raquo;</a>
+				<a id="googleplus" class="list-group-item" href="#">Google+ &raquo;</a>
+				<a id="delicious" class="list-group-item" href="#">Delicious &raquo;</a>
+				<a id="reddit" class="list-group-item" href="#">Reddit &raquo;</a>
+				<a id="buffer" class="list-group-item" href="#">Buffer &raquo;</a>
+			</div>
+		</div>
+		<div class="col-md-9">
+			<div class="hero-unit">
+                <h2>About</h2>
+				<p>RT Proxy is a simple tool to proxy RT requests (see <a href="http://scripting.com/stories/2012/02/03/aStandardForRting.html">A standard for RT'ing?</a>) to different social sites.</p>
+                <p>This page takes three possible query string parameters: <code>title</code>, <code>link</code> and <code>description</code> although Delicious is currently the only service that takes a description.</p>
+                <h2>Demo</h2>
+                <p>Fill out the following fields and click Test. It submits back to this page with the query string parameters
+                filled out.  Then you can click any of the links to the left to submit to that service.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" class="form-control" name="title" id="title" placeholder="Title">
+                    </div>
+                    <div class="form-group">
+                        <label for="link">Link</label>
+                        <input type="text" class="form-control" name="link" id="link" placeholder="Link">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea class="form-control" rows="3" name="description" id="description" placeholder="Description"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default">Test</button>
+                </form>
+			</div>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <p>&copy; 2015 <a href="http://blog.andrewshell.org">Andrew Shell</a></p>
+    </footer>
+    </div>
+	<script src="rtproxy.js"></script>
+  </body>
+</html>
